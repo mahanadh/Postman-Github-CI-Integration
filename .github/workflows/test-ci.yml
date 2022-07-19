@@ -41,7 +41,8 @@ jobs:
  
       # Run postman collection
       - name: Run Postman Collection        
-        run: newman run https://api.getpostman.com/collections/14707445-0a9ad3f0-13c7-488a-9b2f-a2874f8a04ae\?apikey=PMAK-62d64735e4977148726bd01b-cbd85ae889a68a23d884c12854a000c024 --environment https://api.getpostman.com/environments/14707445-408592ad-25ff-4461-8e04-b03cdd7e67be\?apikey=PMAK-62d64735e4977148726bd01b-cbd85ae889a68a23d884c12854a000c024 –reporters cli,html
+        run: |
+         newman run https://api.getpostman.com/collections/14707445-0a9ad3f0-13c7-488a-9b2f-a2874f8a04ae\?apikey=PMAK-62d64735e4977148726bd01b-cbd85ae889a68a23d884c12854a000c024 --environment https://api.getpostman.com/environments/14707445-408592ad-25ff-4461-8e04-b03cdd7e67be\?apikey=PMAK-62d64735e4977148726bd01b-cbd85ae889a68a23d884c12854a000c024 –reporters cli,html
 
      
       # Upload the reports to TestArtifacts directory
